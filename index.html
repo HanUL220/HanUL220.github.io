@@ -114,16 +114,21 @@
             <div class="resume-item">
               <h4>서울강서공업고등학교</h4>
               <h5>2016 - 2019</h5>
-              <p><img src="assets/img/School_Logo1.png"  style="max-width: 30%;" alt=""></p>
+              <p><img src="assets/img/School_Logo1.png" style="max-width: 30%;" alt=""></p>
               <p>
-              <p>특성화고 - U-정보통신학과 졸업</p>
-              <ul>
-                <li>
-                  국가직무능력표준(NCS) 이수 / IT시스템관리
-                </li>
-              </ul>
-              <p></p>
-            </div>
+                <p>특성화고 - U-정보통신학과 졸업</p>
+                <ul>
+                  <li>
+                    국가직무능력표준(NCS) 이수 / IT시스템관리
+                  </li>
+                </ul>
+                <p class="toggle-button" onclick="toggleContent('education-details-1')">▶ 이수사항 (click)</p>
+                  <div id="education-details-1" style="display: none;">
+                      <!-- 추가된 이미지 부분 -->
+                      <img src="assets/img/ncs2.jpg" style="max-width: 100%;" alt="Your Image">
+                  </div>
+              </p>
+          </div>
             <!--대학교-->
             <div class="resume-item">
               <h4>한세대학교</h4>
@@ -479,6 +484,16 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    function toggleContent(elementId) {
+        var x = document.getElementById(elementId);
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
 
 </body>
 
